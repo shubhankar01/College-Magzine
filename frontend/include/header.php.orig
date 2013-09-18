@@ -1,0 +1,31 @@
+<?php
+include ('dbconnect.php');
+
+echo '<div class="container top-bar home-border">
+    <div class="attached">
+	    <div class="name" onclick="void(0);">
+	        <span><a  href="" class="name">College Magezine</a></span>
+	  	</div>
+	  	<ul class="right">
+	        <li class="show-for-small">
+	          <a href="">Home</a>
+	        </li>
+			<li>
+			  <a href="" >Features</a>
+			</li>
+	        <li>
+	          <a href="../post-article/post-article.php">Post Article</a>
+	        </li>
+			<li>
+			  <a href="" >Discussion Room</a>
+			</li>
+			<li>
+			  <a href="" >Feedback</a>
+			</li>
+	  	</ul>
+	 </div>
+  </div>
+  <br/><br/>
+';
+
+?>

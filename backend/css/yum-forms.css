@@ -1,0 +1,622 @@
+﻿/*
+Yum Forms
+Yum Toolkit 0.1 Beta
+Designed by Shoaib Merchant
+Date created - 7th September 2012
+Property of Actonate
+www.actonate.com
+*/
+.form-area{
+	min-width:500px;
+	padding-right:15px;
+	font-size:1.2em;
+	line-height:140%;
+	color:#777;
+
+}
+.form-sub-area{
+	width:100%;
+	margin-top:25px;
+}
+.form-main{
+	width:100%;
+	margin:0;
+	padding:0;
+
+}
+.form-sub-title{
+	color:#3399FF;
+	margin:0;
+	padding:0;
+	font-size:1.4em;
+	padding-bottom:5px;
+	border-bottom:1px #EFEFEF solid;
+	clear:both;
+
+}
+.form-main .form-auto{
+	width:385px;
+	height:38px;
+	float:left;
+	margin-bottom:25px;	
+}
+.form-main .form-autocomplete{
+	width:385px;
+	height:38px;
+	float:left;
+	margin-bottom:25px;	
+}
+.form-main .form-autocomplete-box{
+	position:absolute;
+	min-width:250px;
+	margin-top:31px;
+	max-width:385px;
+	margin-left:2px;
+	background-color:white;
+	z-index:10;
+	border:1px #CCC solid;
+	min-height:40px;
+	overflow:auto;
+	max-height:250px;
+}
+.form-main .form-autocomplete-box ul{
+	margin:0;
+	padding:0;
+	margin-top:2px;
+	list-style:none;
+}
+.form-main .form-autocomplete-box ul li{
+	padding:3px;
+	padding-left:5px;
+	font-size:0.9em;
+}
+.form-main .form-autocomplete-box ul li:hover{
+	background-color:#cde8f9;
+	cursor:pointer;
+}
+.form-separator{
+	clear:both;
+	width:100%;
+	height:1px;
+	background-color:#E1E1E1;
+	margin-bottom:20px;
+}
+.form-main:first-child{
+	margin-top:15px;
+}
+.form-caption{
+	color:#999;
+	margin:0;
+	padding:0;
+	font-size:0.9em;
+	margin-bottom:25px;
+}
+.form-asterisk{
+	content:"*";
+	color:#CC0000;
+	font-size:1.2em;
+}
+.form-main label{
+	width:170px;
+	float:left;
+	padding-right:20px;
+	padding-top:4px;
+	clear:both;
+	margin-bottom:25px;
+}
+.form-main .uncollapsed{
+	padding-left:30px;
+	background-image:url('../../images/common/icons/form-collapse-down.png');
+	background-repeat:no-repeat;
+	cursor:pointer;
+	opacity:0.8;
+}
+.form-main .collapsed:hover{
+	opacity:1.0;
+}
+.form-main .collapsed{
+	padding-left:30px;
+	background-image:url('../../images/common/icons/form-collapse-up.png');
+	background-repeat:no-repeat;
+	cursor:pointer;
+	opacity:0.8;
+}
+.form-main .uncollapsed:hover{
+	opacity:1.0;
+}
+.form-main input[type="password"]{
+	display: block;
+	width: 380px;
+	float: left;
+	height: 28px;
+	font-size: 1.3em;
+	padding-left: 5px;
+	border: 1px #DDD solid;
+	color:#444;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom:25px;
+}
+.form-pass-strength{
+	clear:both;
+	margin-left:185px;
+	display: block;
+	width: 380px;
+	float: left;
+	height: 28px;
+	font-size: 1.3em;
+	padding-left: 5px;
+	color:#444;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom:25px;
+}
+.form-pass-strength-box{
+	float:left;
+	max-width:310px;
+	min-width:2px;
+	height:18px;
+	margin-top:5px;
+	background-color:#CC0000;
+
+	border-radius:5px;
+}
+.form-pass-strength-num{
+	float:right;
+	height:24px;
+	margin-top:4px;
+	width:60px;
+	text-align:right;
+	color:#999;
+	font-size:0.7em;
+}
+.form-pass-strength-num:after{
+	content:"%";
+}
+.form-main select{
+	display: block;
+	width: 385px;
+	float: left;
+	height: 38px;
+	font-size: 0.9em;
+
+	padding:5px;
+	border: 1px #DDD solid;
+	color: #999;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom:25px;
+}
+.form-date{
+	width:385px;
+	height:38px;
+	float:left;
+	margin-bottom:25px;
+}
+.form-radiogroup{
+	width:385px;
+	min-height:38px;
+	float:left;
+	margin-bottom:25px;
+	margin-top:5px;
+}
+.form-fileuploader{
+	width:385px;
+	min-height:38px;
+	float:left;
+	margin-bottom:25px;
+	margin-top:5px;
+}
+.form-fileuploader .upload-display{
+	clear:both;
+	width:100%;
+	height:150px;
+	background-color:#0066FF;
+}
+.form-fileuploader input[type="button"]
+{
+	display: block;
+	width: 90px;
+	float: left;
+	height: 30px;
+	text-align:center;
+	font-size: 0.75em;
+	padding-left: 5px;
+	border:1px #0761bc solid;
+	font-weight:bold;
+	text-transform:uppercase;
+	background-color:#3399FF;
+	color:white;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin-bottom:25px;
+}
+.form-fileuploader input[type="button"]:hover
+{
+	cursor:pointer;
+	background-color:#238ef9;
+}
+.form-fileuploader .upload-text
+{
+	margin:0;
+	margin-bottom:15px;
+	padding:0;
+	float:left;
+	padding-right:20px;
+	font-size:0.8em;
+	color:#999999;
+	margin-left:10px;
+	margin-top:2px;
+}
+.form-checkboxgroup{
+	width:385px;
+	min-height:38px;
+	float:left;
+	margin-bottom:25px;
+	margin-top:5px;
+}
+.form-checkboxgroup input[type="checkbox"]
+{
+	display:inline-block;
+	border:10px red solid;
+	float:left;
+	margin-top:5px;
+	margin-right:10px;
+	margin-bottom:5px;
+}
+.form-checkboxgroup .check-text
+{
+	margin:0;
+	margin-bottom:15px;
+	padding:0;
+	float:left;
+	padding-right:20px;
+}
+
+.form-radiogroup input[type="radio"]
+{
+	display:inline-block;
+	border:10px red solid;
+	float:left;
+	margin-top:5px;
+	margin-right:10px;
+	margin-bottom:5px;
+}
+.form-radiogroup .radio-text
+{
+	margin:0;
+	margin-bottom:15px;
+	padding:0;
+	float:left;
+	padding-right:20px;
+}
+.form-date .form-day{
+	display: block;
+	width: 75px;
+	float: left;
+	height: 38px;
+	font-size: 0.9em;
+	padding:5px;
+	border: 1px #DDD solid;
+	color: #999;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom:25px;
+}
+.form-date .form-month{
+	display: block;
+	width: 190px;
+	float: left;
+	height: 38px;
+	margin-left:5px;
+	font-size: 0.9em;
+	padding:5px;
+	border: 1px #DDD solid;
+	color: #999;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom:25px;
+}
+.form-date .form-year{
+	display: block;
+	width: 110px;
+	float: left;
+	height: 38px;
+	margin-left:5px;
+	font-size: 0.9em;
+	padding:5px;
+	border: 1px #DDD solid;
+	color: #999;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom:25px;
+}
+.form-main .form-submitButton , form-submitButton {
+	display: block;
+	width: 110px;
+	float: left;
+	height: 35px;
+	font-size: 0.8em;
+	padding-left: 5px;
+	border:1px #f6a70a solid;	
+	font-weight:bold;
+	text-transform:uppercase;
+	background-color:#ffbc37;
+	color:white;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	margin-bottom:25px;
+	
+}
+.form-main .form-submitButton:hover{
+	background-color:#ffb115;
+	cursor:pointer;
+}
+.form-main .form-disabledButton{
+	background-color:#DDD !important; 
+	border:1px #CCC solid !important;
+}
+.form-main .form-disabledButton:hover{
+	cursor:default !important;
+	background-color:#DDD !important;
+	border:1px #CCC solid !important;
+}
+.form-main .form-deleteButton{
+	background-color:#d94a38;
+	margin-left:10px;
+	border:1px #b61b07 solid;
+}
+.form-main .form-deleteButton:hover{
+	background-color:#cf3b28;
+	border:1px #ae1c0a solid;
+}
+.form-main input[type="text"]{
+	display: block;
+	width: 380px;
+	float: left;
+	height: 28px;
+	font-size: 0.9em;
+	padding-left: 5px;
+	border: 1px #DDD solid;
+	color: #999;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom:25px;
+}
+.form-error-text{
+	margin:0;
+	padding:0;
+	clear:both;
+	float:left;
+	color:#CC0000;
+	font-size:0.8em;
+	margin-top:-22px;
+	font-style:italic;
+	margin-bottom:25px;
+	margin-left:190px;
+}
+.form-error-text .positive{
+	color:#009933;
+}
+.form-main .form-error{
+	border-color:#CC0000 !important;
+	border-width:2px !important;
+}
+.form-main textarea{
+	display: block;
+	width: 380px;
+	float: left;
+	min-height:200px;
+	max-width:100%;
+	height: 200px;
+	font-size: 0.9em;
+	padding-left: 5px;
+	border: 1px #DDD solid;
+	color: #999;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	margin-bottom:25px;
+}
+.form-select-checkbox{
+
+}
+.form-select-checkbox .form-select-checkbox-display{
+	clear:left;
+	margin:0;
+	padding:0;
+	margin-left:215px;
+	font-size:0.8em;
+	margin-bottom:25px;
+	list-style:square;
+
+}
+/*
+.yum-datatable{
+	margin-top:25px;
+	margin-left:10px;
+}
+.yum-datatable .ui-widget-header 
+{
+	background:#EEE !important;
+	border:1px #DDD solid !important;
+	margin-right:1px;
+
+}
+.yum-datatable .ui-widget-header label{
+	color:#666;
+	font-size:0.9em;
+}
+.yum-datatable .ui-widget-header input[type="text"]
+{
+	background:white !important;
+	border:1px #DDD solid;
+	padding:5px 5px 5px 7px;
+	border-radius:5px;
+	width:200px;
+	font-size:1.1em;
+	margin-left:6px;
+
+}
+.yum-datatable .ui-widget-header select
+{
+	background:white !important;
+	border:1px #DDD solid;
+	padding:5px 5px 5px 7px;
+	border-radius:5px;
+	font-size:1.1em;
+	margin-left:6px;
+
+}
+.yum-datatable .ui-toolbar{
+	padding:15px !important;
+}
+.yum-datatable .ui-state-default{
+	background: #299bd0 !important;
+	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px #CCC solid;
+	border-top:0px;
+	border-right:1px #CCC solid;
+	border-left:1px #CCC solid;
+
+}
+.yum-datatable tbody{
+	border-right:1px #CCC solid;
+	border-left:1px #CCC solid;
+}
+.yum-datatable tr{
+	height:40px; 
+}
+.yum-datatable .odd{
+	background-color:#dfeaef !important;
+	color:#555;
+}
+.yum-datatable .even{
+	color:#555;
+}
+.yum-datatable .odd .sorting_1{
+	background-color:#c9dee7 !important;
+	color:#555;
+}
+.yum-datatable .even .sorting_1{
+	background-color:#EEE !important;
+	color:#555;
+}
+.yum-datatable .dataTables_paginate .fg-button{
+	color:#666 !important;
+	font-size:0.9em;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#CCC !important;
+}
+.yum-datatable .ui-state-default .ui-icon{
+	background-image:url('../../images/smoothness/ui-icons_888888_256x240_2.png');
+}
+*/
+.yum-datatable{
+	margin-left:10px;
+	margin-bottom:15px;
+}
+.yum-datatable .ui-widget-header 
+{
+	background:none!important;
+	border:none !important;
+	margin-right:1px;
+}
+.yum-datatable .ui-widget-header label{
+	color:#666;
+	font-size:0.9em;
+}
+.yum-datatable .ui-widget-header input[type="text"]
+{
+	background:white !important;
+	border:1px #DDD solid;
+	padding:5px 5px 5px 7px;
+	border-radius:5px;
+	width:150px;
+	font-size:1.1em;
+	margin-left:6px;
+
+}
+.yum-datatable .ui-widget-header select
+{
+	background:white !important;
+	border:1px #DDD solid;
+	padding:5px 5px 5px 7px;
+	border-radius:5px;
+	font-size:1.1em;
+	margin-left:6px;
+	margin-right:5px;
+
+}
+.yum-datatable .ui-toolbar{
+	padding:15px !important;
+	padding-left:5px !important;
+	padding-right:5px !important;
+	margin-right:3px;
+}
+.yum-datatable .ui-state-default{
+	background:white !important;
+	color:#333;
+	padding-top:10px;
+	padding-bottom:5px;
+	border-bottom:1px #DDD solid;
+	border-top:1px #DDD solid;
+	border-right:1px #DDD solid;
+	border-left:1px #DDD solid;
+}
+.yum-datatable tbody{
+	border-right:1px #DDD solid;
+	border-left:1px #DDD solid;
+	border-top:4px #f7b419 solid !important;
+	border-bottom:1px #DDD solid;
+}
+.yum-datatable tr{
+	height:45px; 
+}
+.yum-datatable .odd{
+	background-color:#F1F1F1 !important;
+	color:#555;
+}
+.yum-datatable .even{
+	color:#555;
+}
+.yum-datatable .odd .sorting_1{
+	background-color:#E8E8E8 !important;
+	color:#555;
+}
+.yum-datatable .even .sorting_1{
+	background-color:#F7F7F7 !important;
+	color:#555;
+}
+.yum-datatable .dataTables_paginate .fg-button{
+	color:#666 !important;
+	font-size:0.9em;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#DDD !important;
+}
+.yum-datatable .dataTables_paginate .fg-button:hover{
+	background-color:#CCC !important;
+}
+
+
+/*-- AUTOCOMPLETE STYLING --*/
+.autocomplete-w1 { position: absolute; top: 0px; left: 0px; margin: 6px 0 0 6px; /* IE6 fix: */ _background: none; _margin: 1px 0 0 0; }
+.autocomplete { border: 1px solid #999; background: #FFF; cursor: default; text-align: left; max-height: 350px; overflow: auto; margin: -6px 6px 6px -6px; /* IE6 specific: */ _height: 350px; _margin: 0; _overflow-x: hidden; }
+.autocomplete .selected { background: #c9e6ed; }
+.autocomplete div { padding: 5px 10px; white-space: nowrap; overflow: hidden; }
+.autocomplete strong { font-weight: normal; color: #3399FF; }

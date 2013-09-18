@@ -1,0 +1,201 @@
+﻿/*
+Al Habibs Jobs - Administrator Area CSS
+Layout CSS
+Designed by Shoaib Merchant
+Date created - 28th August, 2012
+Property of Actonate
+www.actonate.com
+*/
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#555;
+	font-size:0.9em;
+	margin:0;
+	padding:0;	
+	background-image:url('../images/backg.png');
+	background-repeat:repeat;
+}
+.clear{
+	clear:both;
+}
+a img{
+	border:0;
+}
+a{
+	text-decoration:none;
+}
+#status-bar{
+	height:35px;
+	background-color:white;
+	width:100%;
+	border-bottom:1px #EEE solid;
+}
+#status-left-col{
+	margin:0;
+	padding:0;
+	float:left;
+	width:197px;
+	height:27px;
+	margin-left:20px;
+	padding-top:8px;
+	padding-left:3px;
+}
+#status-left-col a{
+	color:#666;
+	opacity:0.7;
+}
+#status-left-col a:hover{
+	opacity:1;
+}
+#status-right-col a{
+	color:#666;
+	opacity:0.7;
+}
+#status-right-col a:hover{
+	opacity:1;
+}
+#status-right-col{
+	float:right;
+	width:387px;
+	height:35px;
+	margin-right:15px;
+	padding-right:3px;
+}	
+#user-detail{
+	margin:0;
+	padding:0;
+	float:left;
+	height:27px;
+	padding-top:8px;
+	width:200px;
+}
+#top-time{
+	float:right;
+	width:170px;
+	height:27px;
+	padding-top:8px;
+	padding-left:10px;
+	border-left:1px #EEE  solid;
+}
+#header-area{
+	height:85px;
+	width:100%;
+	background-color:white;
+	box-shadow:0px 5px 5px #DDD;
+}
+#menu-area{
+	height:35px;
+	width:100%;
+	border-top:1px solid #EEE;
+	background-color:white;
+	box-shadow:0px 5px 10px #DDD;
+}
+#main-menu{
+	float:left;
+	margin-left:25px;
+	height:35px;
+}
+#search-bar{
+	width:275px;
+	margin-right:25px;
+	float:right;
+	height:35px;
+	background-color:#EEE;
+	display:none;
+}
+#main-wrapper{
+	width:100%;
+}
+#left-panel{
+	width:110px;
+	height:550px;
+	background-color:#CCC;
+	border-radius:10px;
+	top:177px;
+	opacity:0.2;
+	position:absolute;
+	left:25px;
+	box-shadow:0 0 5px #CCC;
+	display:none;
+	
+/*	width:110px;
+	height:550px;
+	background-color:#CCC;
+	border-radius:10px;
+	opacity:0.2;
+	margin-left:25px;
+	float:left;
+	box-shadow:0 0 5px #CCC;
+*/
+}
+#content-panel{
+	min-height:520px;
+	padding:15px;
+	background-color:white;
+	padding-bottom:150px;
+	position:relative;
+	margin-right:25px;
+	margin-bottom:20px;
+	margin-left:25px;
+	margin-top:20px;
+	box-shadow:0 0 5px #CCC;
+	overflow:auto;
+	overflow-x:hidden;
+}
+#right-panel{
+	width:255px;
+	height:225px;
+	background-color:white;
+	position:absolute;
+	right:25px;
+	top:177px;
+	padding:10px;
+	box-shadow:0 0 5px #CCC;
+	display:none;
+/*
+	width:275px;
+	height:375px;
+	background-color:white;
+	float:right;
+	margin-right:25px;
+	box-shadow:0 0 5px #CCC;
+*/
+}
+#footer{
+	position:relative;
+	width:100%;
+	bottom:10px;
+	text-align:center;
+	color:#666;
+	margin-top:25px;
+	font-size:0.8em;
+	height:25px;
+}
+#footer a{
+	color:#0066FF;
+}
+#footer a:hover{
+	color:#003399;
+}
+#logo{
+	width:300px;
+	margin-top:15px;
+	height:60px;
+	float:left;
+	margin-left:20px;
+}
+
+.pic{
+	width:45px;
+	height:60px;
+}
+.title{
+	font-size:1.3em;
+	width:980px;
+	border-bottom:thin #CCCCCC solid;
+}
+.content{
+	color:#666666;
+	margin-bottom:40px;
+}

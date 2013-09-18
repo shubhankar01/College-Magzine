@@ -1,0 +1,66 @@
+﻿#quizdetails
+{
+	width:980px;
+	height:auto;
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+.heading1{
+	font-size:1.5em ;
+	font-weight:bold;
+	margin-top:20px;
+	width:100%;
+	margin-bottom:20px;
+	border-bottom:2px #0086DF solid;
+	padding-bottom:2px;
+}
+.heading2{
+	font-size:1.2em ;
+	font-weight:bold;
+	
+	float:left;
+}
+.title{
+	width:700px;
+}
+.bstyle{
+	width:300px;
+}
+.heading3{
+	font-size:1.2em ;
+	font-weight:normal;
+}
+.quiztype{
+	width:250px;
+}
+.textarea{
+	margin-left:10px;
+}
+#totalresultset{
+	width:980px;
+	height:auto;
+	border:1px solid;
+	margin-left:auto;
+	margin-right:auto;
+}
+#addresult{
+	width:720px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#createquiz{
+	width:980px;
+	height:auto;
+}
+#psychometric{
+	width:400px;
+	height:200px;
+	border:2px solid;
+	border-radius:5px;
+}
+#psychometric:hover{
+	background-color:#FFFFDD;
+}

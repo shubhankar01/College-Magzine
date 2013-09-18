@@ -1,0 +1,20 @@
+﻿#totalbody{
+	width:940px;
+	height:1200px;;
+}
+.category{
+	list-style:none;
+}
+.heading{
+	list-style:none;
+}
+#categories{
+	width:210px;
+	float:left;
+	height:auto;
+}
+#content{
+	width:730px;
+	height:auto;
+	float:left;
+}

@@ -1,0 +1,33 @@
+﻿body{
+		
+}
+#articlepic{
+	width:250px;
+	height:300px;
+	float:left;
+}
+#articleabout{
+	width:700px;
+	height:310px;
+}
+#articledescrip{
+	width:400px;
+	height:300px;
+	float:right;
+}
+#articleheading{
+	font-size:large;
+	color:#00AEEF;
+	text-transform:capitalize;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#articletime{
+	color:red;
+	font-size:x-small;
+}
+#articleauthors{
+	color:black;
+	font-size:small;
+	font-style:italic;
+}
